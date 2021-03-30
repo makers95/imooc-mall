@@ -3,7 +3,7 @@ package com.imooc.mall.exception;
 /**
  * @Description 統一異常
  **/
-public class ImoocMallException extends Exception {
+public class ImoocMallException extends RuntimeException {
     private final Integer code;
     private final String message;
 

@@ -3,6 +3,8 @@ package com.imooc.mall.model.dao;
 import com.imooc.mall.model.pojo.Cart;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public interface CartMapper {
     int deleteByPrimaryKey(Integer id);
@@ -16,4 +18,7 @@ public interface CartMapper {
     int updateByPrimaryKeySelective(Cart record);
 
     int updateByPrimaryKey(Cart record);
+
+    List<CategoryMapper> selectList();
+
 }
